@@ -206,8 +206,9 @@ public class Date {
         return String.format("%04d.%02d.%02d", year, month, day);
     }
 
-    public void display() {
+    public void display(toString()) {
         System.out.println(this);
     }
+
 
     }
