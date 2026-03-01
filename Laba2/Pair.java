@@ -110,7 +110,7 @@ class RightAngled extends Pair {
     // Переопределяем метод display
     @Override
     public void display() {
-        super.display();  // выводим катеты из родителя
+        super.display(toString());  // выводим катеты из родителя
         System.out.printf("Гипотенуза:   %.2f\n", getHypotenuse());
         System.out.printf("Площадь:      %.2f\n", getArea());
     }
@@ -121,4 +121,5 @@ class RightAngled extends Pair {
         return String.format("RightAngled(катет a=%.2f, катет b=%.2f, гипотенуза=%.2f, площадь=%.2f)",
                 a, b, getHypotenuse(), getArea());
     }
+
 }
